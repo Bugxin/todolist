@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList-最简单的待办事项</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <form action="javascript:addToDo()" id="form">
+                <h2>ToDoList</h2>
+                <input type="text" id="title" name="title" placeholder="添加ToDo" required="required" autocomplete="off" />
+            </form>
+        </div>
+    </header>
+
+    <section class="container">
+        <div  class="clearfix">
+            <h2>正在进行</h2>
+            <span id="todocount">0</span>
+        </div>
+        <ol id="todolist"></ol>
+
+        <div class="clearfix">
+            <h2>已经完成</h2>
+            <span id="donecount">0</span>
+        </div>
+        <ul id="donelist"></ul>
+
+    </section>
+
+    <footer>
+        <div class="container clearfix">
+            <span>Copyright &copy; 2019 by zx</span>
+            <button id="clear" type="button">clear</button>
+        </div>
+    </footer>
+    <script type="text/javascript" src="jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
